@@ -1,8 +1,7 @@
-/* reset / genel */
+
 * { box-sizing: border-box; }
 html, body, #root { height: 100%; margin: 0; }
 
-/* sayfa */
 .movies-page {
   background: #141414;
   color: #fff;
@@ -10,7 +9,6 @@ html, body, #root { height: 100%; margin: 0; }
   font-family: Arial, sans-serif;
 }
 
-/* header */
 .header {
   display: flex;
   align-items: center;
@@ -28,11 +26,10 @@ html, body, #root { height: 100%; margin: 0; }
 .search-box input { padding: 6px 8px; border-radius: 4px 0 0 4px; border: none; }
 .search-box button { background: #e50914; color: #fff; border: none; padding: 6px 10px; border-radius: 0 4px 4px 0; cursor: pointer; }
 
-/* kategori bölümü */
 .category-section { padding: 18px 24px; }
 .category-title { margin: 0 0 12px 4px; font-size: 20px; }
 
-/* yatay kaydırma satırı */
+
 .movie-row {
   display: flex;
   gap: 14px;
@@ -41,17 +38,17 @@ html, body, #root { height: 100%; margin: 0; }
   padding-bottom: 12px;
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
-  align-items: flex-start; /* kart üsttekiler hizalansın */
+  align-items: flex-start; 
 }
 
-/* scrollbar stil (webkit) */
+
 .movie-row::-webkit-scrollbar { height: 8px; }
 .movie-row::-webkit-scrollbar-thumb { background: #b00; border-radius: 6px; }
 .movie-row::-webkit-scrollbar-track { background: #222; }
 
-/* her film kartı - sabit boyut */
+
 .movie-card {
-  flex: 0 0 200px;    /* esneme yok, sabit genişlik */
+  flex: 0 0 200px;    
   width: 200px;
   height: 300px;
   border-radius: 8px;
@@ -60,18 +57,17 @@ html, body, #root { height: 100%; margin: 0; }
   box-shadow: 0 6px 18px rgba(0,0,0,0.5);
 }
 
-/* resim kartı içinde tam otursun */
 .movie-card img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;   /* kırpma yaparak kartı doldurur */
+  object-fit: cover;   
 }
 
-/* hover efekti (opsiyonel) */
+
 .movie-card:hover { transform: translateY(-6px); transition: transform 0.18s ease; }
 
-/* responsive: küçük ekranlarda biraz küçült */
+
 @media (max-width: 520px) {
   .movie-card { flex: 0 0 140px; width: 140px; height: 210px; }
 }
@@ -107,8 +103,8 @@ html, body, #root { height: 100%; margin: 0; }
   position: relative;
   display: inline-block;
   margin: 5px;
-  width: 180px; /* örnek genişlik */
-  height: 270px; /* örnek yükseklik */
+  width: 180px; 
+  height: 270px; 
   overflow: hidden;
   cursor: pointer;
 }
@@ -122,7 +118,7 @@ html, body, #root { height: 100%; margin: 0; }
 }
 
 .movie-card:hover img {
-  transform: scale(1.1); /* hafif zoom efekti */
+  transform: scale(1.1); 
 }
 
 .movie-description {

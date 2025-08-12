@@ -120,7 +120,7 @@ export default function Movies() {
   const handleCategorySelect = (cat) => {
     setSelectedCategory(cat);
     setMenuOpen(false);
-    setActivePage("Kategoriler"); // Kategoriler seçilince aktif sayfa "Kategoriler" olsun
+    setActivePage("Kategoriler"); 
   };
 
   const toggleMenu = (e) => {
@@ -131,7 +131,7 @@ export default function Movies() {
   const handleNavClick = (page) => {
     setActivePage(page);
     if (page !== "Kategoriler") {
-      setSelectedCategory(null); // Kategori seçimini sıfırla diğer sayfalarda
+      setSelectedCategory(null); 
       setMenuOpen(false);
     }
   };
