@@ -1,0 +1,52 @@
+.kapsayici {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+}
+
+.kapsayici h2 {
+  text-align: center;
+  color: #333;
+}
+
+.kapsayici form {
+  display: flex;
+  flex-direction: column;
+}
+
+.kapsayici label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.kapsayici input {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+
+.kapsayici button {
+  margin-top: 15px;
+  padding: 8px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.kapsayici button:hover {
+  background-color: #45a049;
+}
+
+.mesaj {
+  margin-top: 10px;
+  color: blue;
+  font-weight: bold;
+  text-align: center;
+}
+
